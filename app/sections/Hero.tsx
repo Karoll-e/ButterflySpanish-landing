@@ -10,10 +10,10 @@ import { Suspense } from "react";
 
 export default function Hero() {
   return (
-    <section className="relative ">
+    <section className="relative">
       {/* <div className="absolute inset-0 opacity-10 bg-[url('/butterfly-pattern.svg')] bg-repeat"></div> */}
       <div className="container px-4 md:py-28 py-10 mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
-        <div className="lg:w-1/2 space-y-6">
+        <div className="lg:w-1/2 space-y-8">
           {/* <div className="flex gap-2">
             <Badge variant="outline" className="text-rose-600 border-rose-800">
               Butterfly Spanish
@@ -43,19 +43,19 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5 text-white transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </a>
-            <Link
+            {/* <Link
               href="https://www.youtube.com/c/butterflyspanish"
               target="_blank"
             >
-              {/* <Button
+              <Button
                 size="lg"
                 variant="outline"
                 className="border-zinc-600 text-zinc-800 hover:bg-gray-500/10"
               >
                 <Youtube className="mr-2 h-5 w-5" />
                 Watch on YouTube
-              </Button> */}
-            </Link>
+              </Button>
+            </Link> */}
           </div>
           <YouTubeStats />
         </div>
