@@ -6,7 +6,7 @@ import { Play } from 'lucide-react';
 import { Button } from './button';
 
 const getVideoSrc = (videoId: string) => {
-  return `https://www.youtube.com/embed/${videoId}?controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1`;
+  return `https://www.youtube.com/embed/${videoId}?controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1&mute=0`;
 };
 
 const ThumbnailSrc = (videoId: string) => {
@@ -34,7 +34,7 @@ export default function VideoComponent({ videoId }: VideoComponentProps) {
           <Button
             size="icon"
             onClick={() => setIsPlaying(true)}
-            className="w-16 h-16 rounded-full bg-white/90 text-rose-600 hover:bg-white hover:scale-110 transition-transform"
+            className="w-16 h-16 rounded-full bg-white/90 text-rose-600 hover:bg-white hover:scale-110 transition-transform cursor-pointer"
           >
             <Play className="h-8 w-8" />
           </Button>
