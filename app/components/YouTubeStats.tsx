@@ -25,7 +25,7 @@ export function YouTubeStats() {
       <div className="flex gap-8 sm:gap-12">
         <StatItem
           icon={<Video className="h-6 w-6 text-rose-600" />}
-          value="150M+"
+          value="150+"
           label="Video lessons"
           iconBgColor="bg-rose-100/50"
         />
