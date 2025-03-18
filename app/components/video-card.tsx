@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { YouTubeVideo } from "../types/youtube"
 import LiteYoutube from "./ui/lite-youtube"
 

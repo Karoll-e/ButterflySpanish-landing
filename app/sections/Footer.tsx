@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Facebook, YouTube, XformerlyTwitter } from "../components/icons";
 

@@ -1,9 +1,6 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { Play } from "lucide-react";
 import { YouTubeStats } from "../components/YouTubeStats";
 import { Suspense } from "react";
 import LiteYoutube from "../components/ui/lite-youtube";
