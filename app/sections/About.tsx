@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Youtube } from "lucide-react";
+import { Facebook, YouTube, XformerlyTwitter } from "@/app/components/icons";
 
 export default function About() {
   return (
@@ -11,7 +11,7 @@ export default function About() {
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-full h-full rounded-xl bg-rose-200"></div>
                 <Image
-                  src="/1.png"
+                  src="/about-butterfly.jpg"
                   alt="Ana - Butterfly Spanish"
                   width={500}
                   height={600}
@@ -20,7 +20,7 @@ export default function About() {
               </div>
             </div>
             <div className="lg:w-2/3 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-semibold">¡Hola! I'm Ana</h2>
+              <h2 className="text-3xl md:text-5xl font-semibold">¡Hola! I'm Ana</h2>
               <p className="text-lg text-gray-600">
                 I'm your Spanish teacher and the creator of Butterfly Spanish. I believe in teaching real, practical
                 Spanish that native speakers actually use today - not outdated textbook phrases.
@@ -35,27 +35,27 @@ export default function About() {
                 Whether you're a beginner just starting your Spanish journey or an advanced student looking to perfect
                 your skills, I'm here to guide you every step of the way. ¡Vamos a aprender español juntos!
               </p>
-              <div className="flex gap-4 pt-4">
+              <div className="flex gap-28 pt-4 items-center justify-center md:justify-start md:gap-8">
                 <Link
                   href="https://www.youtube.com/c/butterflyspanish"
                   target="_blank"
                   className="text-rose-600 hover:text-rose-700"
                 >
-                  <Youtube className="h-6 w-6" />
+                  <YouTube className="h-6 w-6" />
                 </Link>
                 <Link
-                  href="https://www.youtube.com/c/butterflyspanish"
+                  href="https://www.facebook.com/ButterflySpanish"
                   target="_blank"
                   className="text-rose-600 hover:text-rose-700"
                 >
                   <Facebook className="h-6 w-6" />
                 </Link>
                 <Link
-                  href="https://www.youtube.com/c/butterflyspanish"
+                  href="https://twitter.com/ontheflySpanish"
                   target="_blank"
                   className="text-rose-600 hover:text-rose-700"
                 >
-                  <Twitter className="h-6 w-6" />
+                  <XformerlyTwitter className="h-6 w-6" />
                 </Link>
             </div>
             </div>
