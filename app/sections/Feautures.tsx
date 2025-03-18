@@ -28,18 +28,18 @@ const featureCards: FeatureCard[] = [
 
 export default function Features() {
     return (
-        <section className="py-16 md:py-20 dark:bg-transparent">
+        <section className="py-16 md:py-20 ">
             <div className="@container">
                 <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">My Teaching Approach</h2>
-                    <p className="text-lg mt-4 text-zinc-600">I focus on teaching you the Spanish that native speakers actually use in everyday life.</p>
+                    <h2 className="text-balance text-3xl font-semibold lg:text-5xl">My Teaching Approach</h2>
+                    <p className=" mt-4 text-zinc-600">I focus on teaching you the Spanish that native speakers actually use in everyday life.</p>
                 </div>
-                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-12 *:text-center md:mt-16">
+                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-8 *:text-center md:mt-16 ">
                     {featureCards.map((card, index) => (
-                        <Card key={index} className="group shadow-zinc-950/5 border-rose-200">
+                        <Card key={index} className="group shadow-zinc-950/10 hover:shadow-rose-600/20 transition-shadow duration-300 hover:border-rose-200">
                             <CardHeader>
                                 <CardDecorator>
-                                    <card.icon className="size-6" aria-hidden />
+                                    <card.icon className="size-7 text-rose-500" aria-hidden />
                                 </CardDecorator>
                                 <h3 className=" text-xl font-medium">{card.title}</h3>
                             </CardHeader>
