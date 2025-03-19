@@ -28,7 +28,7 @@ A modern, responsive website for Butterfly Spanish, showcasing Spanish lessons a
 
 - Node.js 18.17 or later
 - YouTube Data API key
-- npm or yarn
+- pnpm or yarn
 
 ### Installation
 
