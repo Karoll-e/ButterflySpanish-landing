@@ -30,3 +30,12 @@ export interface PlaylistResponse {
   }[];
   nextPageToken?: string;
 } 
+
+export interface Comment {
+  id: string;
+  text: string;
+  authorName: string;
+  authorImage: string;
+  likeCount: number;
+  publishedAt: string;
+}
