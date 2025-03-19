@@ -1,7 +1,7 @@
 "use client"
 
 import { YouTubeVideo } from "../types/youtube"
-import LiteYoutube from "./ui/lite-youtube"
+import LiteYoutube from "./lite-youtube"
 
 interface VideoCardProps {
   video: YouTubeVideo

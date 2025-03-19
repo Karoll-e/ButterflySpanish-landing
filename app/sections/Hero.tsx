@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { YouTubeStats } from "../components/YouTubeStats";
 import { Suspense } from "react";
-import LiteYoutube from "../components/ui/lite-youtube";
+import LiteYoutube from "../components/lite-youtube";
 
 export default function Hero() {
   return (
