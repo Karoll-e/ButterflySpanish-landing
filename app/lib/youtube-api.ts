@@ -29,16 +29,14 @@ function formatViewCount(viewCount: string) {
   return `${count} views`;
 }
 
-// Helper function to safely get thumbnail URL
+// get thumbnail URL
 function getThumbnailUrl(thumbnails: any): string {
   if (!thumbnails) return '';
   
-  // Try to get the highest quality thumbnail available
   if (thumbnails.high && thumbnails.high.url) return thumbnails.high.url;
   if (thumbnails.medium && thumbnails.medium.url) return thumbnails.medium.url;
   if (thumbnails.default && thumbnails.default.url) return thumbnails.default.url;
   
-  // As a last resort, try to get any thumbnail
   for (const key in thumbnails) {
     if (thumbnails[key] && thumbnails[key].url) {
       return thumbnails[key].url;
@@ -59,7 +57,6 @@ export async function getPopularVideos(maxResults = 3): Promise<YouTubeVideo[]> 
     );
     const searchData = await response.json();
 
-    // Check if items array exists
     if (!searchData.items || !Array.isArray(searchData.items) || searchData.items.length === 0) {
       console.log('No items found in search response:', searchData);
       return [];
@@ -71,7 +68,7 @@ export async function getPopularVideos(maxResults = 3): Promise<YouTubeVideo[]> 
     );
     const videosData: PlaylistResponse = await videosResponse.json();
 
-    // Check if videos data has items
+
     if (!videosData.items || !Array.isArray(videosData.items)) {
       console.log('No video details found:', videosData);
       return [];
@@ -105,7 +102,6 @@ export async function getNewestVideos(maxResults = 3): Promise<YouTubeVideo[]> {
     );
     const searchData = await response.json();
 
-    // Check if items array exists
     if (!searchData.items || !Array.isArray(searchData.items) || searchData.items.length === 0) {
       console.log('No items found in search response:', searchData);
       return [];
@@ -117,7 +113,6 @@ export async function getNewestVideos(maxResults = 3): Promise<YouTubeVideo[]> {
     );
     const videosData: PlaylistResponse = await videosResponse.json();
 
-    // Check if videos data has items
     if (!videosData.items || !Array.isArray(videosData.items)) {
       console.log('No video details found:', videosData);
       return [];
@@ -151,7 +146,6 @@ export async function getPlaylistVideos(playlistId: string, maxResults = 3): Pro
     );
     const playlistData: PlaylistResponse = await playlistResponse.json();
 
-    // Check if items array exists
     if (!playlistData.items || !Array.isArray(playlistData.items) || playlistData.items.length === 0) {
       console.log('No items found in playlist response:', playlistData);
       return [];
@@ -163,7 +157,6 @@ export async function getPlaylistVideos(playlistId: string, maxResults = 3): Pro
     );
     const videosData: PlaylistResponse = await videosResponse.json();
 
-    // Check if videos data has items
     if (!videosData.items || !Array.isArray(videosData.items)) {
       console.log('No video details found:', videosData);
       return [];
@@ -187,7 +180,6 @@ export async function getPlaylistVideos(playlistId: string, maxResults = 3): Pro
 }
 
 
-
 export async function getTopComments(maxResults = 5): Promise<Comment[]> {
   if (!YOUTUBE_API_KEY) {
     throw new Error('YouTube API key is not configured');
@@ -196,7 +188,6 @@ export async function getTopComments(maxResults = 5): Promise<Comment[]> {
   try {
     const newestVideos = await getNewestVideos(3);
     
-    // Check if we got any videos
     if (!newestVideos || newestVideos.length === 0) {
       console.log('No videos found for comments');
       return [];
