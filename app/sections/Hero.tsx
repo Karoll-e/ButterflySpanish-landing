@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-// import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { YouTubeStats } from "../components/YouTubeStats";
 import { Suspense } from "react";
@@ -9,26 +8,17 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* <div className="absolute inset-0 opacity-10 bg-[url('/butterfly-pattern.svg')] bg-repeat"></div> */}
-      <div className="container px-0 md:px-4 md:py-28 py-10 mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
+      <div className="container px-0 md:px-4 md:py-24 py-10 mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12 fo">
         <div className="lg:w-1/2 space-y-8 px-4 md:px-0">
-          {/* <div className="flex gap-2">
-            <Badge variant="outline" className="text-rose-600 border-rose-800">
-              Butterfly Spanish
-            </Badge>
-          <Badge variant="outline" className="text-rose-600 border-rose-600">
-              + 100 free video lessons
-            </Badge>
-          </div> */}
-          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Learn{" "}
+          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+          Learn{" "}
             <span className="bg-gradient-to-r from-rose-500 via-pink-300 to-rose-500 text-transparent bg-clip-text">
-              Real-Life Spanish
+            Real-Life
             </span>{" "}
-            with Ana
+            Spanish with Ana
           </h1>
-          <p className="text-xl md:text-2xl opacity-90 text-zinc-800">
-            Real, practical Spanish from a native speaker. Join over 1 million
-            students learning Spanish the fun way!
+          <p className="text-xl md:text-2xl opacity-90 text-zinc-800 text-balance">
+             Join over 1.3 million students worldwide and learn Spanish with Ana's proven method that focuses on real conversations, not just textbook rules.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a href="#videos">
