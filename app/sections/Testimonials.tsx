@@ -45,7 +45,7 @@ export default async function Testimonials() {
   const [featuredComment, ...otherComments] = sortedComments;
 
   return (
-    <section className=" md:py-20 py-10">
+    <section className=" md:py-16 py-12">
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <h2 className="text-3xl font-medium lg:text-5xl">

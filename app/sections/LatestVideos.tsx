@@ -14,13 +14,13 @@ export default async function LatestVideos() {
   ]);
 
   return (
-    <section id="videos" className="py-20">
+    <section id="videos" className="py-12 md:py-16">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-5xl font-semibold mb-4">My Spanish Lessons</h2>
             <p className="text-gray-600 max-w-2xl">
-              Over 100 free video lessons to help you improve your Spanish skills
+              Over 150 free video lessons to help you improve your Spanish skills
             </p>
           </div>
           <Link
