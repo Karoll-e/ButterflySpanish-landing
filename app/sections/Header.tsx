@@ -6,7 +6,7 @@ import { Menu, Youtube } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="top-0 z-50 px-8 md:px-28 lg:px-22">
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-10 h-10 relative">
