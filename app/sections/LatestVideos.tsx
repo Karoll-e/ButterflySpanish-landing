@@ -15,7 +15,7 @@ export default async function LatestVideos() {
 
   return (
     <section id="videos" className="py-12 md:py-16">
-      <div className="container px-4 mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-5xl font-semibold mb-4">My Spanish Lessons</h2>
