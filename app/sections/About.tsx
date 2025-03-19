@@ -4,7 +4,7 @@ import { Facebook, YouTube, XformerlyTwitter } from "@/app/components/icons";
 
 export default function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-16 md:py-22">
       <div className="container px-4 mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/3">
