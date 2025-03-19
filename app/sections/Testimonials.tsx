@@ -1,6 +1,7 @@
-import { getTopComments, Comment } from "@/app/lib/youtube-api";
+import { getTopComments } from "@/app/lib/youtube-api";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Comment } from "@/app/types/youtube";
 
 function TestimonialCard({
   comment,
