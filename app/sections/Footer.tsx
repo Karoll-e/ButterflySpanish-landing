@@ -21,7 +21,7 @@ const socialLinks = [
 
 export default function FooterSection() {
   return (
-    <footer className="py-12 md:py-16">
+    <footer className="py-12 md:py-12">
       <div className="mx-auto max-w-5xl px-6 border-t border-zinc-200">
         <div className="my-8 flex flex-wrap justify-center gap-12 md:gap-20">
           {socialLinks.map((social) => (
