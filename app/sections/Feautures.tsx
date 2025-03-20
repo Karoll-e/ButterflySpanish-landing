@@ -36,7 +36,7 @@ export default function Features() {
                 </div>
                 <div className="@min-4xl:container @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-8 *:text-center md:mt-16 ">
                     {featureCards.map((card, index) => (
-                        <Card key={index} className="group shadow-zinc-950/10 hover:shadow-rose-600/20 transition-shadow duration-300 hover:border-rose-200">
+                        <Card key={index} className="group shadow-zinc-950/10 hover:shadow-rose-600/40 transition-shadow duration-300 hover:border-rose-200">
                             <CardHeader>
                                 <CardDecorator>
                                     <card.icon className="size-7 text-rose-500" aria-hidden />
