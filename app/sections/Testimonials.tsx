@@ -47,7 +47,7 @@ export default async function Testimonials() {
 
   return (
     <section className=" md:py-16 py-12">
-      <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
+      <div className="mx-auto container space-y-8 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <h2 className="text-3xl font-medium lg:text-5xl">
             What My Students Say
@@ -61,7 +61,7 @@ export default async function Testimonials() {
         <div className="grid gap-4 lg:grid-cols-2">
           <TestimonialCard
             comment={featuredComment}
-            className="lg:row-span-2 p-6 bg-rose-50/50 border border-rose-200"
+            className="lg:row-span-2 p-6 bg-rose-50/50 border border-rose-200 "
           />
 
           <div className="grid gap-4 sm:grid-cols-2">

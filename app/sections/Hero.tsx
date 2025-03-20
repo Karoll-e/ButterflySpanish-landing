@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* <div className="absolute inset-0 opacity-10 bg-[url('/butterfly-pattern.svg')] bg-repeat"></div> */}
-      <div className="container  md:py-24 py-10 mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12 fo">
+      <div className="container md:py-24 py-10 mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12 fo">
           <div className="lg:w-1/2 space-y-8 px-4 md:px-0">
             <h1 className="text-5xl md:text-5xl lg:text-6xl font-semibold leading-[110%] tracking-tight text-balance">
               Learn{" "}
