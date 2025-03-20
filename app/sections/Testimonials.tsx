@@ -2,6 +2,11 @@ import { getTopComments } from "@/app/lib/youtube-api";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Comment } from "@/app/types/youtube";
+import he from "he";
+
+type Props = {
+  text: string;
+};
 
 function TestimonialCard({
   comment,
@@ -14,7 +19,7 @@ function TestimonialCard({
     <Card className={className}>
       <CardContent className="h-full pt-6">
         <blockquote className="grid h-full grid-rows-[1fr_auto] gap-10">
-          <p className="text-xl font-medium line-clamp-4">{comment.text}</p>
+          <p className="text-xl font-medium line-clamp-4">{he.decode(comment.text)}</p>
 
           <div className="grid grid-cols-[auto_1fr] items-center gap-3">
             <Avatar className="size-12">
